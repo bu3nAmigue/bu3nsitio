@@ -19,14 +19,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Hugo-Site
+      - name: hugo-deploy
         # You may pin to the exact commit or the version.
-        # uses: chabad360/hugo-actions@f544b0928c3dd7fb0aed75603c1f786f967114e8
-        uses: chabad360/hugo-actions@1.0.0
-        with:
-          # The path to build the site to
-          # buildPath: ./public # optional, default is ./public
-          # Arguments to pass to Hugo
-          args: --minify # optional, default is ["--gc", "--minify", "--cleanDestinationDir"]
-          # The version of Hugo to use
-          # hugoVersion: # optional
+        # uses: reuixiy/hugo-deploy@1185ce893b699b1809ec27bebcd8212a8127fefa
+        uses: reuixiy/hugo-deploy@v1
